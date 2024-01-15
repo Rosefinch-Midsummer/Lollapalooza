@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>The Princeton Companion to Mathematics - Lollapalooza</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Lollapalooza</li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">格物致知</li><li class="chapter-item expanded "><a href="../数学.html"><strong aria-hidden="true">1.</strong> 数学</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Math/怎么解题：数学思维的新方法.html"><strong aria-hidden="true">1.1.</strong> 怎样解题：数学思维的新方法</a></li><li class="chapter-item expanded "><a href="../Math/普林斯顿数学之旅.html" class="active"><strong aria-hidden="true">1.2.</strong> The Princeton Companion to Mathematics</a></li><li class="chapter-item "><a href="../Math/普林斯顿应用数学之旅.html"><strong aria-hidden="true">1.3.</strong> The Princeton Companion to Applied Mathematics</a></li><li class="chapter-item "><a href="../Math/从一到无穷大.html"><strong aria-hidden="true">1.4.</strong> 从一到无穷大</a></li></ol></li><li class="chapter-item expanded "><a href="../物理.html"><strong aria-hidden="true">2.</strong> 物理</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Physics/费曼物理学讲义.html"><strong aria-hidden="true">2.1.</strong> 费曼物理学讲义</a></li></ol></li><li class="chapter-item expanded "><a href="../计算机.html"><strong aria-hidden="true">3.</strong> 计算机</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Computer/深入理解计算机系统.html"><strong aria-hidden="true">3.1.</strong> 深入理解计算机系统</a></li><li class="chapter-item "><a href="../Computer/计算机程序的构造与解释.html"><strong aria-hidden="true">3.2.</strong> 计算机程序的构造与解释</a></li><li class="chapter-item "><a href="../Computer/计算机网络：自顶向下方法.html"><strong aria-hidden="true">3.3.</strong> 计算机网络：自顶向下方法</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">诚意正心</li><li class="chapter-item expanded "><a href="../人类学习理论.html"><strong aria-hidden="true">4.</strong> 人类学习理论</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Learning/朱子读书法.html"><strong aria-hidden="true">4.1.</strong> 朱子读书法</a></li></ol></li><li class="chapter-item expanded "><a href="../日日新.html"><strong aria-hidden="true">5.</strong> 日日新</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Widsom/穷查理宝典——查理芒格智慧箴言录.html"><strong aria-hidden="true">5.1.</strong> 穷查理宝典——查理芒格智慧箴言录</a></li><li class="chapter-item "><a href="../Wisdom/富兰克林自传.html"><strong aria-hidden="true">5.2.</strong> 富兰克林自传</a></li></ol></li><li class="chapter-item expanded "><a href="../文化素养.html"><strong aria-hidden="true">6.</strong> 文化素养</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Literacy/东京梦华录.html"><strong aria-hidden="true">6.1.</strong> 东京梦华录</a></li><li class="chapter-item "><a href="../Literacy/生命是什么.html"><strong aria-hidden="true">6.2.</strong> 生命是什么？</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">修齐治平</li><li class="chapter-item expanded "><a href="../经学.html"><strong aria-hidden="true">7.</strong> 经学</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Ching/四书.html"><strong aria-hidden="true">7.1.</strong> 四书</a></li><li class="chapter-item "><a href="../Ching/尚书.html"><strong aria-hidden="true">7.2.</strong> 尚书</a></li><li class="chapter-item "><a href="../Ching/诗经.html"><strong aria-hidden="true">7.3.</strong> 诗经</a></li><li class="chapter-item "><a href="../Ching/易经.html"><strong aria-hidden="true">7.4.</strong> 易经</a></li><li class="chapter-item "><a href="../Ching/春秋.html"><strong aria-hidden="true">7.5.</strong> 春秋</a></li></ol></li><li class="chapter-item expanded "><a href="../史学.html"><strong aria-hidden="true">8.</strong> 史学</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Shi/史记.html"><strong aria-hidden="true">8.1.</strong> 史记</a></li><li class="chapter-item "><a href="../Shi/中国史学名著.html"><strong aria-hidden="true">8.2.</strong> 中国史学名著</a></li><li class="chapter-item "><a href="../Shi/国史大纲.html"><strong aria-hidden="true">8.3.</strong> 国史大纲</a></li></ol></li><li class="chapter-item expanded "><a href="../经济学.html"><strong aria-hidden="true">9.</strong> 经济学</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Economics/平准书.html"><strong aria-hidden="true">9.1.</strong> 平准书</a></li><li class="chapter-item "><a href="../Economics/食货志.html"><strong aria-hidden="true">9.2.</strong> 食货志</a></li><li class="chapter-item "><a href="../Economics/自由选择.html"><strong aria-hidden="true">9.3.</strong> 自由选择</a></li><li class="chapter-item "><a href="../Economics/资本主义与自由.html"><strong aria-hidden="true">9.4.</strong> 资本主义与自由</a></li><li class="chapter-item "><a href="../Economics/经济学的思维方式.html"><strong aria-hidden="true">9.5.</strong> 经济学的思维方式</a></li><li class="chapter-item "><a href="../Economics/财富、贫穷与政治.html"><strong aria-hidden="true">9.6.</strong> 财富、贫穷与政治</a></li><li class="chapter-item "><a href="../Economics/看得见的和看不见的.html"><strong aria-hidden="true">9.7.</strong> 看得见的和看不见的</a></li><li class="chapter-item "><a href="../Economics/小岛经济学.html"><strong aria-hidden="true">9.8.</strong> 小岛经济学</a></li></ol></li><li class="chapter-item expanded "><a href="../政治学.html"><strong aria-hidden="true">10.</strong> 政治学</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Politics/联邦党人文集.html"><strong aria-hidden="true">10.1.</strong> 联邦党人文集</a></li><li class="chapter-item "><a href="../Politics/论美国的民主.html"><strong aria-hidden="true">10.2.</strong> 论美国的民主</a></li><li class="chapter-item "><a href="../Politics/旧制度与大革命.html"><strong aria-hidden="true">10.3.</strong> 旧制度与大革命</a></li><li class="chapter-item "><a href="../Politics/通往奴役之路.html"><strong aria-hidden="true">10.4.</strong> 通往奴役之路</a></li><li class="chapter-item "><a href="../Politics/极权主义的起源.html"><strong aria-hidden="true">10.5.</strong> 极权主义的起源</a></li><li class="chapter-item "><a href="../Politics/大国政治的悲剧.html"><strong aria-hidden="true">10.6.</strong> 大国政治的悲剧</a></li><li class="chapter-item "><a href="../Politics/理想国.html"><strong aria-hidden="true">10.7.</strong> 理想国</a></li></ol></li><li class="chapter-item expanded "><a href="../法学.html"><strong aria-hidden="true">11.</strong> 法学</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Law/唐律疏议.html"><strong aria-hidden="true">11.1.</strong> 唐律疏议</a></li><li class="chapter-item "><a href="../Law/宋刑统.html"><strong aria-hidden="true">11.2.</strong> 宋刑统</a></li><li class="chapter-item "><a href="../Law/宋刑统.html"><strong aria-hidden="true">11.3.</strong> 大明律</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">雅致</li><li class="chapter-item expanded "><a href="../历史小说.html"><strong aria-hidden="true">12.</strong> 历史小说</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Novel/东周列国志.html"><strong aria-hidden="true">12.1.</strong> 东周列国志</a></li><li class="chapter-item "><a href="../Novel/九州缥缈录.html"><strong aria-hidden="true">12.2.</strong> 九州缥缈录</a></li></ol></li><li class="chapter-item expanded "><a href="../乌托邦及反乌托邦.html"><strong aria-hidden="true">13.</strong> 乌托邦及反乌托邦小说</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Novel/乌托邦.html"><strong aria-hidden="true">13.1.</strong> 乌托邦</a></li><li class="chapter-item "><a href="../Novel/太阳城.html"><strong aria-hidden="true">13.2.</strong> 太阳城</a></li><li class="chapter-item "><a href="../Novel/动物农场.html"><strong aria-hidden="true">13.3.</strong> 动物农场</a></li><li class="chapter-item "><a href="../Novel/1984.html"><strong aria-hidden="true">13.4.</strong> 1984</a></li><li class="chapter-item "><a href="../Novel/美丽新世界.html"><strong aria-hidden="true">13.5.</strong> 美丽新世界</a></li><li class="chapter-item "><a href="../Novel/我们.html"><strong aria-hidden="true">13.6.</strong> 我们</a></li></ol></li><li class="chapter-item expanded "><a href="../格致小说.html"><strong aria-hidden="true">14.</strong> 格致小说</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Novel/银河英雄传说.html"><strong aria-hidden="true">14.1.</strong> 银河英雄传说</a></li><li class="chapter-item "><a href="../Novel/星船伞兵.html"><strong aria-hidden="true">14.2.</strong> 星船伞兵</a></li><li class="chapter-item "><a href="../Novel/银河帝国三部曲.html"><strong aria-hidden="true">14.3.</strong> 银河帝国三部曲</a></li><li class="chapter-item "><a href="../Novel/机器人五部曲.html"><strong aria-hidden="true">14.4.</strong> 机器人五部曲</a></li><li class="chapter-item "><a href="../Novel/基地七部曲.html"><strong aria-hidden="true">14.5.</strong> 基地七部曲</a></li></ol></li><li class="chapter-item expanded "><a href="../世情小说.html"><strong aria-hidden="true">15.</strong> 世情小说</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../Novel/醒世恒言.html"><strong aria-hidden="true">15.1.</strong> 醒世恒言</a></li><li class="chapter-item "><a href="../Novel/警世通言.html"><strong aria-hidden="true">15.2.</strong> 警世通言</a></li><li class="chapter-item "><a href="../Novel/喻世明言.html"><strong aria-hidden="true">15.3.</strong> 喻世明言</a></li><li class="chapter-item "><a href="../Novel/初刻拍案惊奇.html"><strong aria-hidden="true">15.4.</strong> 初刻拍案惊奇</a></li><li class="chapter-item "><a href="../Novel/二刻拍案惊奇.html"><strong aria-hidden="true">15.5.</strong> 二刻拍案惊奇</a></li><li class="chapter-item "><a href="../Novel/白色巨塔.html"><strong aria-hidden="true">15.6.</strong> 白色巨塔</a></li><li class="chapter-item "><a href="../Novel/半泽直树.html"><strong aria-hidden="true">15.7.</strong> 半泽直树</a></li><li class="chapter-item "><a href="../Novel/致命弱点.html"><strong aria-hidden="true">15.8.</strong> 致命弱点</a></li><li class="chapter-item "><a href="../Novel/致命武器.html"><strong aria-hidden="true">15.9.</strong> 致命武器</a></li><li class="chapter-item "><a href="../Novel/致命追杀.html"><strong aria-hidden="true">15.10.</strong> 致命追杀</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Lollapalooza</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<h1 id="the-princeton-companion-to-mathematics"><a class="header" href="#the-princeton-companion-to-mathematics">The Princeton Companion to Mathematics</a></h1>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../Math/怎么解题：数学思维的新方法.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../Math/普林斯顿应用数学之旅.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../Math/怎么解题：数学思维的新方法.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../Math/普林斯顿应用数学之旅.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
